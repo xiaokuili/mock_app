@@ -1,0 +1,8 @@
+
+.active_nav {
+    color:  hsl(var(--primary)) !important;
+    border-radius: 0;
+    border-bottom: 1px solid hsl(var(--primary));
+    
+}
+
