@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.png";
 import "./topbar.css";
-import { IoIosAdd } from "react-icons/io";
-import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import { PlusIcon } from "@heroicons/react/24/outline";
 
 import { Button } from "@/components/ui/button";
