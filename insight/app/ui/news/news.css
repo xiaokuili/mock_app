@@ -1,0 +1,11 @@
+.new_title {
+    color: var(--font-color);
+}
+
+.new_subtitle {
+    color: var(--font-second-color);
+}
+.new_source {
+    color: var(--font-second-color);
+
+}
