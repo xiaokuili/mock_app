@@ -25,6 +25,6 @@ export async function fetchNews(keyword: string) {
 
     return data.rows;
   } catch (error) {
-    throw new Error("Failed to fetch news", error);
+    throw new Error("Failed to fetch news");
   }
 }
