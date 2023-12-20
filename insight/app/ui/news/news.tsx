@@ -42,7 +42,7 @@ const NewsItem = ({
 }) => {
   const url = getRandomImageUrl();
   return (
-    <div className="flex justify-center items-start w-full hover:bg-gray-100 h-56 border-b-2  border-grey  ">
+    <div className="flex justify-center items-start w-full hover:bg-gray-100 h-60 border-b-2  border-grey  pt-6">
       <div className="p-2">
         <Image
           src={url}
