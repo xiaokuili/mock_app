@@ -50,7 +50,7 @@ const Nav = function NavigationMenuDemo() {
   const searchParams = useSearchParams();
   const tag_str = searchParams.get("tag");
   return (
-    <div className="flex justify-center  border  border-b-grey-700 ">
+    <div className="flex justify-center  border-b-2  border-grey-600">
       <NavigationMenu>
         <NavigationMenuList>
           {tags.map((tag) => (

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 const Topbar = () => {
   return (
     <>
-      <div className="flex items-center justify-between p-4 border  border-b-grey-700  px-16">
+      <div className="flex items-center justify-between p-4 border-b-2  border-grey-600  px-16">
         <Image
           src={logo}
           alt="Logo"

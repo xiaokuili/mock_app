@@ -5,7 +5,11 @@
 .new_subtitle {
     color: var(--font-second-color);
 }
+
 .new_source {
     color: var(--font-second-color);
+}
 
+.icon {
+    color: var(--font-second-color);
 }
