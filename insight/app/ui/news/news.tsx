@@ -19,7 +19,7 @@ const News = async ({ tag_href }: { tag_href: string }) => {
   const newsItems = await fetchNews(tag_title);
 
   return (
-    <div className="flex w-2/5 mx-auto mt-20 flex-wrap">
+    <div className="flex w-1/2 mx-auto mt-20 flex-wrap">
       {newsItems.map((item, index) => (
         <NewsItem
           key={index} // Use a unique key for each NewsItem
@@ -43,7 +43,7 @@ const NewsItem = ({
 }) => {
   const url = getRandomImageUrl();
   return (
-    <div className="flex justify-center items-start w-full hover:bg-gray-100 h-60 border-b-2  border-grey  pt-6">
+    <div className="flex justify-center items-start w-full hover:bg-gray-100 h-72 border-b-2  border-grey  pt-6">
       <div className="p-2">
         <Image
           src={url}
@@ -62,7 +62,7 @@ const NewsItem = ({
           </div>
           <div className="pb-4">
             <p className="new_subtitle text-sm tracking-tight	leading-relaxed">
-              {truncate(summary, { length: 120 })}
+              {truncate(summary, { length: 80 })}
             </p>
           </div>
           <div className="flex justify-start">
