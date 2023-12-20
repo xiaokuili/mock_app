@@ -5,7 +5,7 @@ import {
   HandThumbUpIcon,
   HandThumbDownIcon,
 } from "@heroicons/react/24/outline";
-import { fetchNews } from "../../../lib/utils";
+import { fetchNews, getHrefByTitle } from "../../../lib/utils";
 import { truncate } from "lodash";
 import "./news.css";
 
@@ -14,8 +14,9 @@ const getRandomImageUrl = () => {
   return `https://picsum.photos/200/150?random=${randomNumber}`;
 };
 
-const News = async ({ tag_str }: { tag_str: string }) => {
-  const newsItems = await fetchNews(tag_str);
+const News = async ({ tag_href }: { tag_str: string }) => {
+  const tag_title = getHrefByTitle(tag_href);
+  const newsItems = await fetchNews(tag_title);
 
   return (
     <div className="flex w-2/5 mx-auto mt-20 flex-wrap">

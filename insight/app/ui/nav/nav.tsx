@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { useSearchParams } from "next/navigation";
+import { tags } from "@/lib/utils";
 
 import {
   NavigationMenu,
@@ -18,37 +19,11 @@ import {
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import "./nav.css";
-
-const tags: { title: string; href: string }[] = [
-  {
-    title: "招商",
-    href: "zhaoshang",
-  },
-  {
-    title: "半导体新材料",
-    href: "bandaoti",
-  },
-  {
-    title: "生物医药",
-    href: "shengwuyiyao",
-  },
-  {
-    title: "华为",
-    href: "huawei",
-  },
-  {
-    title: "能源化工",
-    href: "nengyuanhuagong",
-  },
-  {
-    title: "量子信息",
-    href: "liangzixinx",
-  },
-];
+import { home_href } from "@/lib/utils";
 
 const Nav = function NavigationMenuDemo() {
   const searchParams = useSearchParams();
-  const tag_str = searchParams.get("tag");
+  const tag_str = searchParams.get("tag") || home_href;
   return (
     <div className="flex justify-center  border-b-2  border-grey-600">
       <NavigationMenu>

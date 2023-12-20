@@ -16,13 +16,14 @@ const Topbar = () => {
           width={40} // 设置宽度
           height={20} // 设置高度
         />
-        <Link href="#">
+        <Link href="/">
           <p className="text-2xl font-bold title">Lennys Newsletter</p>
         </Link>
-
-        <Button>
-          <PlusIcon className="mr-2 h-4 w-4" /> Subcribe
-        </Button>
+        <Link href="/subscribe">
+          <Button>
+            <PlusIcon className="mr-2 h-4 w-4" /> Subcribe
+          </Button>
+        </Link>
       </div>
     </>
   );

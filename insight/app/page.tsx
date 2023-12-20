@@ -9,13 +9,13 @@ export default async function Home({
     tag?: string;
   };
 }) {
-  const tag = searchParams?.tag || "招商";
+  const tag = searchParams?.tag;
 
   return (
     <>
       <Topbar />
       <Nav />
-      <News tag_str={tag} />
+      <News tag_href={tag} />
     </>
   );
 }
