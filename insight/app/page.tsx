@@ -9,7 +9,7 @@ export default async function Home({
     tag?: string;
   };
 }) {
-  const tag = searchParams?.tag;
+  const tag = searchParams?.tag || "";
 
   return (
     <>

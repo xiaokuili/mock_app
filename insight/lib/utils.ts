@@ -41,7 +41,7 @@ export const tags: { title: string; href: string }[] = [
   },
 ];
 
-export function getHrefByTitle(targetHref: string): string | undefined {
+export function getHrefByTitle(targetHref: string): string {
   const tag = tags.find((tag) => tag.href === targetHref);
   return tag ? tag.title : home_title;
 }

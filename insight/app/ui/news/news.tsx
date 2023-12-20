@@ -14,7 +14,7 @@ const getRandomImageUrl = () => {
   return `https://picsum.photos/200/150?random=${randomNumber}`;
 };
 
-const News = async ({ tag_href }: { tag_str: string }) => {
+const News = async ({ tag_href }: { tag_href: string }) => {
   const tag_title = getHrefByTitle(tag_href);
   const newsItems = await fetchNews(tag_title);
 
