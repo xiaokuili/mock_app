@@ -17,7 +17,7 @@ const Topbar = () => {
           height={20} // 设置高度
         />
         <Link href="/">
-          <p className="text-2xl font-bold title">Lennys Newsletter</p>
+          <p className="text-2xl font-bold title">Maybe Newsletter</p>
         </Link>
         <Link href="/subscribe">
           <Button>

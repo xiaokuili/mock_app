@@ -57,12 +57,12 @@ const NewsItem = ({
         <div className="pl-2">
           <div className="pb-6">
             <p className="new_title text-xl font-semibold">
-              {truncate(title, { length: 20 })}
+              {truncate(title, { length: 35 })}
             </p>
           </div>
           <div className="pb-4">
             <p className="new_subtitle text-sm tracking-tight	leading-relaxed">
-              {truncate(summary, { length: 100 })}
+              {truncate(summary, { length: 120 })}
             </p>
           </div>
           <div className="flex justify-start">
